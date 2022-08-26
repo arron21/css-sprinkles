@@ -6,12 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Sprinkles</title>
     <link href="/dist/style.css" rel="stylesheet">
+    <link href="demo.css" rel="stylesheet">
+
 </head>
 <body>
-    <h1 class="fadeInUp">CSS Sprinkles</h1>
+    <div class="wrapper">
+        <button onclick="toggleDarkMode()" class="button darkMode">Toggle Dark Mode ☀️/🌙</button>
+    
+    <h1 class="h1 fadeInUp">CSS Sprinkles</h1>
     <p class="fadeInUp a-delay-2">This library is designed to sprinkle in simple animations to your HTML</p>
     <p class="fadeInUp a-delay-3">It works particularly well with SPAs that handle when HTML elements appear and dissapear.</p>
 
-    <h2 class="fadeInRight a-delay-4">How to use</h2>
+    <h2 class=" h2 fadeInRight a-delay-4">How to use</h2>
+    
+    <p>Add <code>class="fadeInRight a-delay-4"</code> to your HTML elements</p>
+
+    <h2 class="h2">List of animations</h2>
+    <div>
+        <button onclick="triggerAnimations()">trigger animations</button>
+    </div>
+    <ul>
+        <li class="fadeInUp">fadeInUp</li>
+        <li class="fadeInDown">fadeInDown</li>
+        <li class="fadeInLeft">fadeInLeft</li>
+        <li class="fadeInRight">fadeInRight</li>
+    </ul>
+        
+</div>
+<script>
+let toggle = document.getElementsByTagName("h1")[0];
+let toggleBtn = document.getElementsByClassName("darkMode")[0];
+let wrapper = document.getElementsByClassName("wrapper")[0];
+
+function toggleDarkMode() {
+	wrapper.classList.toggle("dark-mode");
+	console.log(wrapper);
+}
+
+
+function triggerAnimations() {
+    let fadeInUp = document.getElementsByClassName("fadeInUp");
+    Array.from(fadeInUp).forEach(function (element) {
+        element.classList.toggle('fadeInUp')
+        setTimeout(()=>{
+            element.classList.toggle('fadeInUp')
+        },100)
+    });
+
+    let fadeInDown = document.getElementsByClassName("fadeInDown");
+    Array.from(fadeInDown).forEach(function (element) {
+        element.classList.toggle('fadeInDown')
+        setTimeout(()=>{
+            element.classList.toggle('fadeInDown')
+        },100)
+    });
+
+    let fadeInLeft = document.getElementsByClassName("fadeInLeft");
+    Array.from(fadeInLeft).forEach(function (element) {
+        element.classList.toggle('fadeInLeft')
+        setTimeout(()=>{
+            element.classList.toggle('fadeInLeft')
+        },100)
+    });
+
+    let fadeInRight = document.getElementsByClassName("fadeInRight");
+    Array.from(fadeInRight).forEach(function (element) {
+        element.classList.toggle('fadeInRight')
+        setTimeout(()=>{
+            element.classList.toggle('fadeInRight')
+        },100)
+    });
+    
+}
+
+</script>
 </body>
 </html>
