@@ -1,0 +1,55 @@
+:root {
+  --a-duration: .2s;
+  --a-easing: cubic-bezier(0.305, 0.735, 0.590, 0.895); }
+
+[class^="fade"] {
+  opacity: 0;
+  animation-fill-mode: forwards !important; }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+.fadeInUp {
+  animation: fadeInUp var(--a-duration) var(--a-easing); }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.fadeInLeft {
+  animation: fadeInLeft var(--a-duration) ease-out; }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.fadeInRight {
+  animation: fadeInRight var(--a-duration) ease-out; }
+
+.a-delay-1 {
+  animation-delay: 100ms; }
+
+.a-delay-2 {
+  animation-delay: 300ms; }
+
+.a-delay-3 {
+  animation-delay: 500ms; }
+
+.a-delay-4 {
+  animation-delay: 700ms; }
+
+.a-delay-5 {
+  animation-delay: 100ms; }

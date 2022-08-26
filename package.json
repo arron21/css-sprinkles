@@ -1,0 +1,14 @@
+{
+  "name": "css-sprinkles",
+  "version": "1.0.0",
+  "description": "Add a little CSS Sprinkles to your HTML to really make it pop",
+  "scripts": {
+    "css": "node-sass src/style.scss -o dist",
+    "css:watch": "npm run css && node-sass src/style.scss -wo dist"
+  },
+  "author": "Arron McCrory",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
