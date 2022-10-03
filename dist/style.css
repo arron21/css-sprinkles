@@ -47,6 +47,17 @@
     opacity: 1;
     transform: translateX(0px); } }
 
+.zoomIn {
+  animation: zoomIn var(--a-duration) ease-out; }
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
 .fadeInRight {
   animation: fadeInRight var(--a-duration) ease-out; }
 
@@ -64,3 +75,6 @@
 
 .a-delay-5 {
   animation-delay: 1000ms; }
+
+.a-delay-6 {
+  animation-delay: 1300ms; }

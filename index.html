@@ -8,29 +8,75 @@
     <link href="/dist/style.css" rel="stylesheet">
     <link href="demo.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="wrapper">
-        <button onclick="toggleDarkMode()" class="button darkMode">Toggle Dark Mode ☀️/🌙</button>
+    <button style="z-index: 200;    position: fixed;
+    top: 36px;
+    right: 36px;" onclick="toggleDarkMode()" class="button darkMode">Toggle Dark Mode ☀️/🌙</button>
+    
+    <section class="hero">
+
     
     <h1 class="h1 fadeInUp">CSS Sprinkles</h1>
-    <p class="fadeInUp a-delay-2">This library is designed to sprinkle in simple animations to your HTML</p>
-    <p class="fadeInUp a-delay-3">It works particularly well with SPAs that handle when HTML elements appear and dissapear.</p>
+    <h2 class="h2 fadeInUp a-delay-4">Mission Statement</h2>
+    <p class="fadeInUp a-delay-4">To provide an extremely simple way to add a little animation to your web app.</p>
 
-    <h2 class=" h2 fadeInRight a-delay-4">How to use</h2>
+</section>
+    <p class="fadeInUp a-delay-5">This library is designed to sprinkle in simple animations to your HTML.</p>
+    <p class="fadeInUp a-delay-6">It works particularly well with SPAs that handle when HTML elements appear and dissapear.</p>
+
+    <h2 class="h2 fadeInRight a-delay-4">How to use</h2>
     
-    <p>Add <code>class="fadeInRight a-delay-4"</code> to your HTML elements</p>
+    <p>Add <code>class="fadeInRight"</code> to your HTML elements.</p>
+    <p>If you want to add some delay you can use one of the delay classes <code>class="a-delay-4"</code></p>
 
     <h2 class="h2">List of animations</h2>
-    <div>
-        <button onclick="triggerAnimations()">trigger animations</button>
+    <code>.fadeInUp</code>
+    <code>.fadeInDown</code>
+    <code>.fadeInLeft</code>
+    <code>.fadeInRight</code>
+    <code>.zoomIn</code>
+    <h2 class="h2">List of delays</h2>
+    <code>.a-delay-1</code>
+    <code>.a-delay-2</code>
+    <code>.a-delay-3</code>
+    <code>.a-delay-4</code>
+    <code>.a-delay-5</code>
+    <code>.a-delay-6</code>
+
+
+    <h2 class="h2">Examples</h2>
+
+    <div class="card fadeInUp repeat">
+        <div>
+            fadeInUp
+        </div> 
     </div>
-    <ul>
-        <li class="fadeInUp">fadeInUp</li>
-        <li class="fadeInDown">fadeInDown</li>
-        <li class="fadeInLeft">fadeInLeft</li>
-        <li class="fadeInRight">fadeInRight</li>
-    </ul>
+    <div class="card fadeInDown repeat">
+        <div>
+            fadeInDown
+        </div> 
+    </div>
+    <div class="card fadeInLeft repeat">
+        <div>
+            fadeInLeft
+        </div> 
+    </div>
+    <div class="card fadeInRight repeat">
+        <div>
+            fadeInRight
+        </div> 
+    </div>
+    <div class="card zoomIn repeat">
+        <div>
+            zoomIn
+        </div> 
+    </div>
         
 </div>
 <script>
