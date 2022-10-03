@@ -1,8 +1,11 @@
 {
   "name": "css-sprinkles",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Add a little CSS Sprinkles to your HTML to really make it pop",
-  "keywords": ["css", "animation"],
+  "keywords": [
+    "css",
+    "animation"
+  ],
   "scripts": {
     "css": "node-sass src/style.scss -o dist",
     "css:watch": "npm run css && node-sass src/style.scss -wo dist"
