@@ -9,7 +9,8 @@
 
 @keyframes fadeInUp {
     0% {
-      opacity: 0;
+      opacity: 0; 
+      animation-fill-mode: forwards !important;
       transform: translateY(10px);
     }
     100% {
@@ -19,6 +20,8 @@
   }
   
   .fadeInUp {
+    opacity: 0;
+    animation-fill-mode: forwards !important;
     animation: fadeInUp var(--a-duration) var(--a-easing);
   }
 
@@ -34,6 +37,8 @@
   }
   
   .fadeInDown {
+    opacity: 0;
+    animation-fill-mode: forwards !important;
     animation: fadeInDown var(--a-duration) var(--a-easing);
   }
   
@@ -50,6 +55,8 @@
   }
   
   .fadeInLeft {
+    opacity: 0;
+    animation-fill-mode: forwards !important;
     animation: fadeInLeft var(--a-duration) ease-out;
   }
 
@@ -63,10 +70,14 @@
       transform: translateX(0px);
     }
   }
-  
-  .zoomIn {
-    animation: zoomIn var(--a-duration) ease-out;
+    
+  .fadeInRight {
+    opacity: 0;
+    animation-fill-mode: forwards !important;
+    animation: fadeInRight var(--a-duration) ease-out;
   }
+
+
 
   @keyframes zoomIn {
     0% {
@@ -78,10 +89,12 @@
       transform: scale(1);
     }
   }
-  
-  .fadeInRight {
-    animation: fadeInRight var(--a-duration) ease-out;
+  .zoomIn {
+    opacity: 0;
+    animation-fill-mode: forwards !important;
+    animation: zoomIn var(--a-duration) ease-out;
   }
+
   
   .a-delay-1 {
     animation-delay: 100ms;
