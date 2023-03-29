@@ -15,6 +15,6 @@
   "repository": "https://github.com/arron21/css-sprinkles",
   "homepage": "https://arron21.github.io/css-sprinkles/",
   "dependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^8.0.0"
   }
 }
