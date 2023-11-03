@@ -1,6 +1,6 @@
 :root {
-  --a-duration: .2s;
-  --a-easing: cubic-bezier(0.305, 0.735, 0.590, 0.895); }
+  --a-duration: 0.2s;
+  --a-easing: cubic-bezier(0.305, 0.735, 0.59, 0.895); }
 
 [class^="fade"] {
   opacity: 0;
@@ -62,7 +62,7 @@
 @keyframes zoomIn {
   0% {
     opacity: 0;
-    transform: scale(0.8); }
+    transform: scale(0.9); }
   100% {
     opacity: 1;
     transform: scale(1); } }
@@ -89,3 +89,9 @@
 
 .a-delay-6 {
   animation-delay: 1300ms; }
+
+.a-delay-7 {
+  animation-delay: 1600ms; }
+
+.a-delay-8 {
+  animation-delay: 1900ms; }
